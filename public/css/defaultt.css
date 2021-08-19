@@ -44,7 +44,15 @@ a img {
 .main,
 .container > header {
 	margin: 0 auto;
-	padding: 2em;
+	padding: 0;
+}
+
+@media(min-width:500px){
+	.main,
+	.container > header {
+		margin: 0 auto;
+		padding: 2em;
+	}
 }
 
 .container {
@@ -72,7 +80,15 @@ a img {
 
 /* Main Content */
 .main {
-	max-width: 69em;
+	max-width: 100%;
+	margin-top:30px;
+}
+
+@media(min-width:500px){
+	.main{
+		max-width: 60em;
+		margin-top: 0px;
+	}
 }
 
 .column {

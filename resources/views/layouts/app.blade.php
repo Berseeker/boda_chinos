@@ -27,10 +27,10 @@
     <link rel="stylesheet" href="{{ asset('css/home.css') }}">
 
     <!-- Book Flip plugin -->
-    <link rel="stylesheet" type="text/css" href="css/default.css" />
+    <link rel="stylesheet" type="text/css" href="css/defaultt.css" />
     <link rel="stylesheet" type="text/css" href="css/bookblock.css" />
     <!-- custom demo style -->
-    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/demoo.css" />
     <script src="js/modernizr.custom.js"></script>
 
 

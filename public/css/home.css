@@ -6,13 +6,6 @@
     padding: 8px;
 }
 
-@media(min-width:500px)
-{
-    #app{
-        padding: 40px;
-    }
-}
-
 .carousel-indicators [data-bs-target]{
     background-color: #edf518 !important;
 }
@@ -32,7 +25,17 @@ h1{
 }
 
 .form-inv{
-    width: 500px;
+    width: 100%;
     display: block;
     margin: 0px auto;
+}
+
+@media(min-width:500px)
+{
+    #app{
+        padding: 40px;
+    }
+    .form-inv{
+        width: 500px;
+    }
 }

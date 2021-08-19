@@ -58,7 +58,7 @@
 
 
     <!-- Slider -->
-    <div class="gla_slider gla_image_bck  gla_wht_txt gla_fixed"  data-image="{{ asset('images/wedding/lauren_affonso/14400933225_3b844816c3_k.jpg') }}" data-stellar-background-ratio="0.8">
+    <div class="gla_slider gla_image_bck  gla_wht_txt gla_fixed"  data-image="{{ asset('images/playa.jpeg') }}" data-stellar-background-ratio="0.8">
 
         <!-- Over -->
         <div class="gla_over" data-color="#1e1d2d" data-opacity="0.2"></div>
@@ -72,7 +72,7 @@
                  <div class="gla_flower gla_flower2">
                     <div class="gla_flower2_name_l">Osiris <b>Te esperamos</b></div>
                     <div class="gla_flower2_name_r">Pablo <b>Octubre 21, 2021</b></div>
-                    <img src="http://placehold.it/600x600" alt="">
+                    <img src="{{ asset('images/togethe.jpeg') }}" alt="">
                 </div>
 
                 
@@ -101,7 +101,7 @@
                      
             <div class="container text-center">
                 <p><img src="{{ asset('images/animations/flower5.gif') }}" data-bottom-top="@src:images/animations/flower5.gif; opacity:1" class="gla_animated_flower" height="150" alt=""></p>
-                <h2>Our Story</h2>
+                <h2>Nuestra Historia</h2>
                 <h3 class="gla_subtitle">The Fourth of July</h3>
                 
                 

@@ -11,33 +11,29 @@
 
     <!-- Scripts -->
     
-    <script src="{{ asset('js/home/jquery.js') }}"></script>
-    <script src="{{ asset('js/bootstrap/bootstrap.bundle.js') }}"></script>
-    <script src="https://kit.fontawesome.com/8d420a663d.js" crossorigin="anonymous"></script>
-    <!--script src="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js" ></script-->
-    <script src="{{ asset('js/home/jquery-slick.min.js') }}" ></script>
-    <script src="{{ asset('js/home/TweenMax.min.js') }}" ></script>
-    <!--script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js" ></script-->
     
-    <link rel="stylesheet" href="{{ asset('fonts/feather/iconfont.css') }}">
-
-
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    
+   
     <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
-    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('css/bootstrap/boots.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/home/main.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/home/slick.css') }}">
-    <!--link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"-->
-    <link rel="stylesheet" href="{{ asset('css/home/slider.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/home/hover.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 
-    <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/-->
-    <link rel="stylesheet" href="{{ asset('css/home/stack_motion/animate.css') }}">
-    <script src="{{asset('js/home/stack_motion/anime.min.js')}}"></script>
-    <script src="{{ asset('js/home/particles.js') }}"></script>
-    
+
+    <!-- Styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ asset('css/home.css') }}">
+
+    <!-- Book Flip plugin -->
+    <link rel="stylesheet" type="text/css" href="css/default.css" />
+    <link rel="stylesheet" type="text/css" href="css/bookblock.css" />
+    <!-- custom demo style -->
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <script src="js/modernizr.custom.js"></script>
+
+
 
 
 

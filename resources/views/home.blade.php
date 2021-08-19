@@ -102,14 +102,10 @@
             <div class="container text-center">
                 <p><img src="{{ asset('images/animations/flower5.gif') }}" data-bottom-top="@src:images/animations/flower5.gif; opacity:1" class="gla_animated_flower" height="150" alt=""></p>
                 <h2>Nuestra Historia</h2>
-                <h3 class="gla_subtitle">The Fourth of July</h3>
+                <h3 class="gla_subtitle">2th Noviembre</h3>
                 
-                
-
-                <p>My fiancé proposed on the Fourth of July. My mother asked us to go to the backyard to get some chairs and he took me by the shed where we could see all of the fireworks. He kissed me, then he took the ring box out of his pocket and asked me to be his wife. He was shaking a little. The proposal was a little silly but perfect, just like him." — Jeska Cords</p>
-
-               
-                
+                <p>Nos conocimos una noche de bar, sin intención de conocer a alguien y con objetivos diferentes. Al finalizar la noche lo que parecía una amistad se transformo al paso del tiempo en la relaciòn que acompañaran este 21 de octubre  </p>
+   
             </div>
             <!-- container end -->
 
@@ -118,16 +114,16 @@
 
 
         <!-- section -->
-        <section class="gla_section gla_image_bck gla_fixed gla_wht_txt" data-stellar-background-ratio="0.8" data-image="http://placehold.it/1400x800">
+        <section class="gla_section gla_image_bck gla_fixed gla_wht_txt" data-stellar-background-ratio="0.8" data-image="{{ asset('images/arena.jpeg') }}">
             
             <!-- Over -->
             <div class="gla_over" data-color="#1e1d2d" data-opacity="0.4"></div>
             
             <div class="container text-center">
                 <p><img src="{{ asset('images/animations/savethedate_wh.gif') }}" data-bottom-top="@src:images/animations/savethedate_wh.gif" height="150" alt=""></p>
-                <h2>August 10th, 2017</h2>
-                <h3 class="gla_subtitle">St. Thomas's Church,<br>Bristol, U.K.</h3>
-                <div class="gla_countdown" data-year="2017" data-month="08" data-day="10"></div>
+                <h2>Octubre 21th, 2021</h2>
+                <h3 class="gla_subtitle">Salón Quinta Punta Sam,<br>Cancún,  MX</h3>
+                <div class="gla_countdown" data-year="2021" data-month="10" data-day="21"></div>
                 
             </div>
             <!-- container end -->
@@ -142,39 +138,36 @@
             
             <div class="container text-center">
                 <p><img src="{{ asset('images/animations/flower6.gif') }}" data-bottom-top="@src:images/animations/flower6.gif; opacity:1" class="gla_animated_flower" height="110" alt=""></p>
-                <h2>Wedding Details</h2>
-                <h3 class="gla_subtitle">When & Where</h3>
-                <p>Our ceremony and reception will be held at the Liberty House. Located on the Hudson River, it has a beautiful, unobstructed view of the World Trade One building and a convenient ferry that runs between it and Manhattan.</p>
+                <h2>Detalles Boda</h2>
+                <h3 class="gla_subtitle">Cuándo & Dónde</h3>
+                <p>Nuestra boda será en el registro civil sólo con las/os testigas/os, después estaremos en el salón Quinta Punta Sam donde realizaremos una union espiritual y posteriormente se dará inicio a la celebración. </p>
                 <div class="row text-center">
                     <div class="col-md-4 gla_round_block">
-                        <div class="gla_round_im gla_image_bck" data-image="http://placehold.it/600x600"></div>
-                        <h3>The Reception</h3>
-                        <p>4:00 PM – 5:30 PM<br>
-                        St. Thomas's Church,<br>
-                        Bristol<br>
-                        U.K.<br>
-                        +1 777-123-4567</p>
-                        <a href="#" class="btn">View Map</a>
+                        <div class="gla_round_im gla_image_bck" data-image="{{ asset('images/boda_civil.jpeg') }}"></div>
+                        <h3>La Boda Civil</h3>
+                        <p>12:00 PM – 1:00 PM<br>
+                        Registro Civil,<br>
+                        Cancún<br>
+                        MX</p>
+                        <a href="https://www.google.com.mx/maps/place/DIRECCI%C3%93N+DE+REGISTRO+CIVIL+-+Oficial%C3%ADa+01+y+Oficial%C3%ADa+02/@21.1615027,-86.8284827,18.1z/data=!4m12!1m6!3m5!1s0x8f4c2c0737a9f0ab:0x1a0a54df0bd2c1b9!2sParque+de+las+Palapas!8m2!3d21.1611457!4d-86.8274882!3m4!1s0x8f4c2c07236d5771:0xd887a1d6aeeb4125!8m2!3d21.1618759!4d-86.8280604" target="_blank" class="btn">View Map</a>
                     </div>
                     <div class="col-md-4 gla_round_block">
-                        <div class="gla_round_im gla_image_bck" data-image="http://placehold.it/600x600"></div>
-                        <h3>The Ceremony</h3>
-                        <p>4:00 PM – 5:30 PM<br>
-                        St. Thomas's Church,<br>
-                        Bristol<br>
-                        U.K.<br>
-                        +1 777-123-4567</p>
-                        <a href="#" class="btn">View Map</a>
+                        <div class="gla_round_im gla_image_bck" data-image="{{ asset('images/ritual.jpeg') }}"></div>
+                        <h3>Unión Espiritual</h3>
+                        <p>1:00 PM – 1:30 PM<br>
+                        Salón Quinta Punta Sam,<br>
+                        Cancún<br>
+                        MX</p>
+                        <a href="https://www.google.com.mx/maps/place/Sal%C3%B3n+De+Eventos+Quinta+Punta+Sam/@21.2162308,-86.8048248,17z/data=!3m1!4b1!4m5!3m4!1s0x8f4c2f21ee2048b5:0xdf68beee4801608f!8m2!3d21.2162302!4d-86.8026138" target="_blank" class="btn">View Map</a>
                     </div>
                     <div class="col-md-4 gla_round_block">
-                        <div class="gla_round_im gla_image_bck" data-image="http://placehold.it/600x600"></div>
-                        <h3>The Afterparty</h3>
-                        <p>4:00 PM – 5:30 PM<br>
-                        St. Thomas's Church,<br>
-                        Bristol<br>
-                        U.K.<br>
-                        +1 777-123-4567</p>
-                        <a href="#" class="btn">View Map</a>
+                        <div class="gla_round_im gla_image_bck" data-image="{{ asset('images/salon.jpeg') }}"></div>
+                        <h3>Celebración</h3>
+                        <p>1:30 PM – 11:30 PM<br>
+                        Salón Quinta Punta Sam,<br>
+                        Cancún<br>
+                        MX</p>
+                        <a href="https://www.google.com.mx/maps/place/Sal%C3%B3n+De+Eventos+Quinta+Punta+Sam/@21.2162308,-86.8048248,17z/data=!3m1!4b1!4m5!3m4!1s0x8f4c2f21ee2048b5:0xdf68beee4801608f!8m2!3d21.2162302!4d-86.8026138" target="_blank" class="btn">View Map</a>
                     </div>
                 </div>
 

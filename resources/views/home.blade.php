@@ -44,10 +44,10 @@
             <li>
                 <h3>Illustration Work</h3>
                 <div class="bb-bookblock">
-                    <div class="bb-item"><a href="http://dribbble.com/shots/702201-Cat"><img src="images/demo3/5.jpg" alt="image05"/></a></div>
-                    <div class="bb-item"><a href="http://dribbble.com/shots/493644-Death-Planet"><img src="images/demo3/6.jpg" alt="image06"/></a></div>
-                    <div class="bb-item"><a href="http://dribbble.com/shots/432311-Bearwolf"><img src="images/demo3/7.jpg" alt="image07"/></a></div>
-                    <div class="bb-item"><a href="http://dribbble.com/shots/297337-iPhone-4S"><img src="images/demo3/8.jpg" alt="image08"/></a></div>
+                    <div class="bb-item"><img src="images/demo3/5.jpg" alt="image05"/></div>
+                    <div class="bb-item"><img src="images/demo3/6.jpg" alt="image06"/></div>
+                    <div class="bb-item"><img src="images/demo3/7.jpg" alt="image07"/></div>
+                    <div class="bb-item"><img src="images/demo3/8.jpg" alt="image08"/></div>
                 </div>
                 <nav>
                     <span class="bb-current"></span>
@@ -59,10 +59,10 @@
             <li>
                 <h3>Everyday Monsters</h3>
                 <div class="bb-bookblock">
-                    <div class="bb-item"><a href="http://dribbble.com/shots/298473-Pirate-Ghosts"><img src="images/demo3/9.jpg" alt="image09"/></a></div>
-                    <div class="bb-item"><a href="http://dribbble.com/shots/298470-Sad-Tree"><img src="images/demo3/10.jpg" alt="image10"/></a></div>
-                    <div class="bb-item"><a href="http://dribbble.com/shots/298467-Male-Mermaid"><img src="images/demo3/11.jpg" alt="image11"/></a></div>
-                    <div class="bb-item"><a href="http://dribbble.com/shots/298463-Wolf-Eats-Cat"><img src="images/demo3/12.jpg" alt="image12"/></a></div>
+                    <div class="bb-item"><img src="images/demo3/9.jpg" alt="image09"/></div>
+                    <div class="bb-item"><img src="images/demo3/10.jpg" alt="image10"/></div>
+                    <div class="bb-item"><img src="images/demo3/11.jpg" alt="image11"/></div>
+                    <div class="bb-item"><img src="images/demo3/12.jpg" alt="image12"/></div>
                 </div>
                 <nav>
                     <span class="bb-current"></span>
@@ -74,10 +74,10 @@
             <li>
                 <h3>Signage for the Office</h3>
                 <div class="bb-bookblock">
-                    <div class="bb-item"><a href="http://dribbble.com/shots/327171-Around-the-Office-Signage-7"><img src="images/demo3/13.jpg" alt="image13"/></a></div>
-                    <div class="bb-item"><a href="http://dribbble.com/shots/327170-Around-the-Office-Signage-6"><img src="images/demo3/14.jpg" alt="image14"/></a></div>
-                    <div class="bb-item"><a href="http://dribbble.com/shots/326463-Around-the-Office-Signage-4"><img src="images/demo3/15.jpg" alt="image15"/></a></div>
-                    <div class="bb-item"><a href="http://dribbble.com/shots/326458-Around-the-Office-Signage-2"><img src="images/demo3/16.jpg" alt="image16"/></a></div>
+                    <div class="bb-item"><img src="images/demo3/13.jpg" alt="image13"/></div>
+                    <div class="bb-item"><img src="images/demo3/14.jpg" alt="image14"/></div>
+                    <div class="bb-item"><img src="images/demo3/15.jpg" alt="image15"/></div>
+                    <div class="bb-item"><img src="images/demo3/16.jpg" alt="image16"/></div>
                 </div>
                 <nav>
                     <span class="bb-current"></span>

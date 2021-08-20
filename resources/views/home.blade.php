@@ -218,7 +218,7 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <label>Tu nombre*</label>
-                                    <input type="text" name="name" class="form-control form-opacity">
+                                    <input type="text" name="nombre" class="form-control form-opacity">
                                 </div>
                                 <div class="col-md-6">
                                     <label>Tu teléfono*</label>

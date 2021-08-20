@@ -13,7 +13,7 @@ class HomeController extends Controller
         return view('home');
     }
 
-    public function create(Request $request)
+    public function store(Request $request)
     {
         $rules = [
             'nombre' => 'required',

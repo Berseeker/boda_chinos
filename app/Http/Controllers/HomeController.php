@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Http;
 
 use App\Mail\Invitacion;
 
@@ -46,7 +47,6 @@ class HomeController extends Controller
             'message' => $request->message,
         ]);
 
-        dd($response);
         return back()->with('success','Su mensaje se envio con exito.');
 
     }

@@ -40,15 +40,21 @@
                     </div>
                 </div>
 
+                @if (session('status'))
+                    <div class="alert alert-success">
+                        {{ session('status') }}
+                    </div>
+                @endif
+
                 <!-- Menu -->
-                <div class="gla_main_menu gla_main_menu_mobile">
+                <!--div class="gla_main_menu gla_main_menu_mobile">
                     
                     <div class="gla_main_menu_icon">
                         <i></i><i></i><i></i><i></i>
                         <b>Menu</b>
                         <b class="gla_main_menu_icon_b">Back</b>
                     </div>
-                </div>
+                </div-->
             </div>
             <!-- container end -->
         </nav>
@@ -190,7 +196,23 @@
                 
                 <div class="row">
                     <div class="col-md-8 col-md-push-2">
-                        <form action="https://formspree.io/your@mail.com" method="POST">
+                        @if ($errors->any())
+                            <div class="errors">
+                                <ul style="list-style: none;
+                                        padding-left: 0px;
+                                        text-align: left;
+                                        color: red;
+                                        padding: 16px;
+                                        background-color: white;">
+                                    @foreach ($errors->all() as $message)
+                                        
+                                        <li>{{ $message }}</li>
+                                        
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @endif
+                        <form action="{{ route('home') }}" method="POST">
                             @csrf
                             <div class="row">
                                 <div class="col-md-6">
@@ -205,28 +227,28 @@
                                 <div class="col-md-6">
                                     <label>Confirma tu asistencia</label>
 
-                                    <input type="radio" name="attend" value="Yes, I will be there">
+                                    <input type="radio" name="attend" value="Si, asistiré">
                                     <span>Si, asistiré</span><br>
-                                    <input type="radio" name="attend" value="Sorry, I can't come">
+                                    <input type="radio" name="attend" value="No podré asistir">
                                     <span>No podré asistir</span>
                                     
                                 </div>
                                 <div class="col-md-6">
                                     <label>¿Llevas acompañantes?</label>
 
-                                    <input type="radio" name="friends" value="Yes, I will be there">
+                                    <input type="radio" name="friends" value="Si">
                                     <span>Si</span><br>
-                                    <input type="radio" name="friends" value="Sorry, I can't come">
+                                    <input type="radio" name="friends" value="No">
                                     <span>No</span>
                                     
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-6" style="margin-top: 15px;">
                                     <label>¿Cuántos acompañantes?</label>
-                                    <input type="number" name="paxs" class="form-control form-opacity">
+                                    <input type="number" name="paxs" class="form-control form-opacity" value="0">
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-6" style="margin-top: 15px;">
                                     <label>Nombres de acompañantes</label>
-                                    <input type="text" name="pax_names" class="form-control form-opacity">
+                                    <input type="text" name="pax_names" class="form-control form-opacity" value='Solo yo'>
                                 </div>
                                 <div class="col-md-12">
                                     <label>Comentarios</label>

@@ -36,7 +36,7 @@ class HomeController extends Controller
         $this->validate($request,$rules,$messages);
 
         
-        $response = Http::post('http://example.com/users', [
+        $response = Http::post('https://chinos-my-love.herokuapp.com/api/post', [
             'nombre' => $request->nombre,
             'telefono' => $request->telefono,
             'attend' => $request->attend,

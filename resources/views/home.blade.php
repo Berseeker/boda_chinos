@@ -140,7 +140,7 @@
                 <p><img src="{{ asset('images/animations/flower6.gif') }}" data-bottom-top="@src:images/animations/flower6.gif; opacity:1" class="gla_animated_flower" height="110" alt=""></p>
                 <h2>Detalles Boda</h2>
                 <h3 class="gla_subtitle">Cuándo & Dónde</h3>
-                <p>Nuestra boda será en el registro civil sólo con las/os testigas/os, después estaremos en el salón Quinta Punta Sam donde realizaremos una union espiritual y posteriormente se dará inicio a la celebración. </p>
+                <p>Nuestra boda será en el registro civil sólo con las/os testigas/os, después estaremos en el salón Quinta Punta Sam donde realizaremos una unión espiritual y posteriormente se dará inicio a la celebración. </p>
                 <div class="row text-center">
                     <div class="col-md-4 gla_round_block">
                         <div class="gla_round_im gla_image_bck" data-image="{{ asset('images/boda_civil.jpeg') }}"></div>
@@ -180,7 +180,7 @@
 
 
         <!-- section -->
-        <section class="gla_section gla_image_bck gla_fixed gla_wht_txt" data-stellar-background-ratio="0.2" data-image="http://placehold.it/1400x800">
+        <section class="gla_section gla_image_bck gla_fixed gla_wht_txt" data-stellar-background-ratio="0.2" data-image="{{ asset('images/palmeras.jpg') }}">
             
             <!-- Over -->
             <div class="gla_over" data-color="#1e1d2d" data-opacity="0.4"></div>
@@ -191,37 +191,48 @@
                 <div class="row">
                     <div class="col-md-8 col-md-push-2">
                         <form action="https://formspree.io/your@mail.com" method="POST">
+                            @csrf
                             <div class="row">
                                 <div class="col-md-6">
-                                    <label>Your name*</label>
+                                    <label>Tu nombre*</label>
                                     <input type="text" name="name" class="form-control form-opacity">
                                 </div>
                                 <div class="col-md-6">
-                                    <label>Your e-mail*</label>
-                                    <input type="text" name="email" class="form-control form-opacity">
+                                    <label>Tu teléfono*</label>
+                                    <input type="number" name="telefono" class="form-control form-opacity">
                                 </div>
                   
                                 <div class="col-md-6">
-                                    <label>Will you attend?</label>
+                                    <label>Confirma tu asistencia</label>
 
                                     <input type="radio" name="attend" value="Yes, I will be there">
-                                    <span>Yes, I will be there</span><br>
+                                    <span>Si, asistiré</span><br>
                                     <input type="radio" name="attend" value="Sorry, I can't come">
-                                    <span>Sorry, I can't come</span>
+                                    <span>No podré asistir</span>
                                     
                                 </div>
                                 <div class="col-md-6">
-                                    <label>Meal preference</label>
-                                    <select name="meal" class="form-control form-opacity">
-                                        <option value="I eat anything">I eat anything</option>
-                                        <option value="Beef">Beef</option>
-                                        <option value="Chicken">Chicken</option>
-                                        <option value="Vegetarian">Vegetarian</option>
-                                    </select>
+                                    <label>¿Llevas acompañantes?</label>
+
+                                    <input type="radio" name="friends" value="Yes, I will be there">
+                                    <span>Si</span><br>
+                                    <input type="radio" name="friends" value="Sorry, I can't come">
+                                    <span>No</span>
+                                    
+                                </div>
+                                <div class="col-md-6">
+                                    <label>¿Cuántos acompañantes?</label>
+                                    <input type="number" name="paxs" class="form-control form-opacity">
+                                </div>
+                                <div class="col-md-6">
+                                    <label>Nombres de acompañantes</label>
+                                    <input type="text" name="pax_names" class="form-control form-opacity">
                                 </div>
                                 <div class="col-md-12">
-                                    <label>Notes</label>
-                                    <textarea name="message" class="form-control form-opacity"></textarea>
+                                    <label>Comentarios</label>
+                                    <textarea name="message" class="form-control form-opacity">
+                                        
+                                    </textarea>
                                 </div>
                                 <div class="col-md-12">
                                     <input type="submit" class="btn submit" value="Send">
@@ -245,24 +256,26 @@
             
             <div class="container text-center">
                 <p><img src="{{ asset('images/animations/flower7.gif') }}" data-bottom-top="@src:images/animations/flower7.gif; opacity:1" class="gla_animated_flower" height="110" alt=""></p>
-                <h2>The Day They Got Engaged</h2>
-                <p>Andy and Jeska met in university in the Graphic Design program. They both remember each other from orientation, but it wasn’t love at first sight, that’s for sure. Andy remembers Jeska as a ‘snooty art bitch (having been in the visual arts program at the time), and she remembers Andy being an ‘arrogant computer nerd’, boasting his knowledge of Macs over the other students.</p>
+                <h2>Nuestros Momentos</h2>
+                <p>Les confiamos parte de nuestra relación capturada en pequeños momentos significativos para nosotres. Hemos construido está relación en pandemia, descubriendo formas de amar, compartir, celebrar y crecer, sin duda esta relación nos ha hecho crecer, personalmente, en pareja y profesionalmente por esto y más queremos dar el siguiente paso y compartir todo lo que el mundo tiene que ofrecernos. </p>
                 
                 <!-- filters -->
                 <div class="button-group filter-button-group">
-                    <a data-filter="*">Show All</a>
-                    <a data-filter=".engagement">Engagement</a>
-                    <a data-filter=".ceremony">Ceremony</a>
+                    <a data-filter="*">Mostrar todos</a>
+                    <a data-filter=".conociendonos">Conociendonos</a>
+                    <a data-filter=".enamorado">Enamorandonos</a>
+                    <a data-filter=".juntes">Viviendo juntes</a>
+                    <a data-filter=".compartiendo">Compartiendo</a>
                 </div>
                 <!-- filters end -->
 
                 <!-- grid -->
                 <div class="gla_portfolio_no_padding grid">
                     
-                    <div class="col-sm-4 gla_anim_box grid-item engagement">
+                    <div class="col-sm-4 gla_anim_box grid-item conociendonos">
                         <div class="gla_shop_item">
-                            <a href="http://placehold.it/1400x800" class="lightbox">
-                                <img src="http://placehold.it/600x600" alt="">
+                            <a href="{{ asset('images/memorias/conociendonos/palapas.jpeg') }}" class="lightbox">
+                                <img src="{{ asset('images/memorias/conociendonos/palapas.jpeg') }}" alt="">
                             </a>
                             
     
@@ -270,168 +283,345 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-4 gla_anim_box grid-item engagement">
+                    <div class="col-sm-4 gla_anim_box grid-item conociendonos">
                         <div class="gla_shop_item">
-                            <a href="http://placehold.it/1400x800" class="lightbox">
-                                <img src="http://placehold.it/600x600" alt="">
+                            <a href="{{ asset('images/memorias/conociendonos/esquites.jpeg') }}" class="lightbox">
+                                <img src="{{ asset('images/memorias/conociendonos/esquites.jpeg') }}" alt="">
                             </a>
                             
 
                         </div>
                     </div>
 
-                    <div class="col-sm-4 gla_anim_box grid-item ceremony">
+                    <div class="col-sm-4 gla_anim_box grid-item enamorado">
                         <div class="gla_shop_item">
-                            <a href="http://placehold.it/1400x800" class="lightbox">
-                                <img src="http://placehold.it/600x600" alt="">
+                            <a href="{{ asset('images/memorias/enamorandonos/casa.jpeg') }}" class="lightbox">
+                                <img src="{{ asset('images/memorias/enamorandonos/casa.jpeg') }}" alt="">
                             </a>
 
                         </div>
                     </div>
 
-                    <div class="col-sm-4 gla_anim_box grid-item engagement">
+                    <div class="col-sm-4 gla_anim_box grid-item conociendonos">
                         <div class="gla_shop_item">
-                            <a href="http://placehold.it/1400x800" class="lightbox">
-                                <img src="http://placehold.it/600x600" alt="">
-                            </a>
-                            
-
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 gla_anim_box grid-item ceremony">
-                        <div class="gla_shop_item">
-                            <a href="http://placehold.it/1400x800" class="lightbox">
-                                <img src="http://placehold.it/600x600" alt="">
+                            <a href="{{ asset('images/memorias/conociendonos/antro.jpeg') }}" class="lightbox">
+                                <img src="{{ asset('images/memorias/conociendonos/antro.jpeg') }}" alt="">
                             </a>
                             
 
                         </div>
                     </div>
 
-                    <div class="col-sm-4 gla_anim_box grid-item engagement">
+                    <div class="col-sm-4 gla_anim_box grid-item compartiendo">
                         <div class="gla_shop_item">
-                            <a href="http://placehold.it/1400x800" class="lightbox">
-                                <img src="http://placehold.it/600x600" alt="">
+                             <a href="{{ asset('images/memorias/compartiendo/relojes.jpeg') }}" class="lightbox">
+                                <img src="{{ asset('images/memorias/compartiendo/relojes.jpeg') }}" alt="">
                             </a>
                             
 
                         </div>
                     </div>
 
-                    <div class="col-sm-4 gla_anim_box grid-item ceremony">
+                    <div class="col-sm-4 gla_anim_box grid-item juntes">
                         <div class="gla_shop_item">
-                            <a href="http://placehold.it/1400x800" class="lightbox">
-                                <img src="http://placehold.it/600x600" alt="">
+                             <a href="{{ asset('images/memorias/juntes/sonrisa.jpeg') }}" class="lightbox">
+                                <img src="{{ asset('images/memorias/juntes/sonrisa.jpeg') }}" alt="">
                             </a>
                             
 
                         </div>
                     </div>
 
-                    <div class="col-sm-4 gla_anim_box grid-item engagement">
+                    <div class="col-sm-4 gla_anim_box grid-item enamorado">
                         <div class="gla_shop_item">
-                            <a href="http://placehold.it/1400x800" class="lightbox">
-                                <img src="http://placehold.it/600x600" alt="">
+                            <a href="{{ asset('images/memorias/enamorandonos/febrero.jpeg') }}" class="lightbox">
+                                <img src="{{ asset('images/memorias/enamorandonos/febrero.jpeg') }}" alt="">
                             </a>
                             
 
                         </div>
                     </div>
 
-                    <div class="col-sm-4 gla_anim_box grid-item ceremony">
+                    <div class="col-sm-4 gla_anim_box grid-item conociendonos">
                         <div class="gla_shop_item">
-                            <a href="http://placehold.it/1400x800" class="lightbox">
-                                <img src="http://placehold.it/600x600" alt="">
+                            <a href="{{ asset('images/memorias/conociendonos/fiesta.jpeg') }}" class="lightbox">
+                                <img src="{{ asset('images/memorias/conociendonos/fiesta.jpeg') }}" alt="">
                             </a>
+                            
 
                         </div>
                     </div>
-
-                    <div class="col-sm-4 gla_anim_box grid-item ceremony">
+                    <div class="col-sm-4 gla_anim_box grid-item compartiendo">
                         <div class="gla_shop_item">
-                            <a href="http://placehold.it/1400x800" class="lightbox">
-                                <img src="http://placehold.it/600x600" alt="">
+                             <a href="{{ asset('images/memorias/compartiendo/alitas.jpeg') }}" class="lightbox">
+                                <img src="{{ asset('images/memorias/compartiendo/alitas.jpeg') }}" alt="">
+                            </a>
+                            
+
+                        </div>
+                    </div>
+                    <div class="col-sm-4 gla_anim_box grid-item juntes">
+                        <div class="gla_shop_item">
+                             <a href="{{ asset('images/memorias/juntes/noche.jpeg') }}" class="lightbox">
+                                <img src="{{ asset('images/memorias/juntes/noche.jpeg') }}" alt="">
                             </a>
                             
 
                         </div>
                     </div>
 
-                    <div class="col-sm-4 gla_anim_box grid-item engagement">
+                    <div class="col-sm-4 gla_anim_box grid-item compartiendo">
                         <div class="gla_shop_item">
-                            <a href="http://placehold.it/1400x800" class="lightbox">
-                                <img src="http://placehold.it/600x600" alt="">
+                             <a href="{{ asset('images/memorias/compartiendo/amigos.jpeg') }}" class="lightbox">
+                                <img src="{{ asset('images/memorias/compartiendo/amigos.jpeg') }}" alt="">
                             </a>
                             
 
                         </div>
                     </div>
 
-                    <div class="col-sm-4 gla_anim_box grid-item ceremony">
+                    <div class="col-sm-4 gla_anim_box grid-item enamorado">
                         <div class="gla_shop_item">
-                            <a href="http://placehold.it/1400x800" class="lightbox">
-                                <img src="http://placehold.it/600x600" alt="">
+                            <a href="{{ asset('images/memorias/enamorandonos/programando.jpeg') }}" class="lightbox">
+                                <img src="{{ asset('images/memorias/enamorandonos/programando.jpeg') }}" alt="">
+                            </a>
+                            
+
+                        </div>
+                    </div>
+                    <div class="col-sm-4 gla_anim_box grid-item compartiendo">
+                        <div class="gla_shop_item">
+                             <a href="{{ asset('images/memorias/compartiendo/cine.jpeg') }}" class="lightbox">
+                                <img src="{{ asset('images/memorias/compartiendo/cine.jpeg') }}" alt="">
                             </a>
                             
 
                         </div>
                     </div>
 
-                    <div class="col-sm-4 gla_anim_box grid-item engagement">
+                    <div class="col-sm-4 gla_anim_box grid-item conociendonos">
                         <div class="gla_shop_item">
-                            <a href="http://placehold.it/1400x800" class="lightbox">
-                                <img src="http://placehold.it/600x600" alt="">
+                            <a href="{{ asset('images/memorias/conociendonos/chinos.jpeg') }}" class="lightbox">
+                                <img src="{{ asset('images/memorias/conociendonos/chinos.jpeg') }}" alt="">
                             </a>
                             
 
                         </div>
                     </div>
 
-                    <div class="col-sm-4 gla_anim_box grid-item engagement">
+                    <div class="col-sm-4 gla_anim_box grid-item compartiendo">
                         <div class="gla_shop_item">
-                            <a href="http://placehold.it/1400x800" class="lightbox">
-                                <img src="http://placehold.it/600x600" alt="">
+                             <a href="{{ asset('images/memorias/compartiendo/family.jpeg') }}" class="lightbox">
+                                <img src="{{ asset('images/memorias/compartiendo/family.jpeg') }}" alt="">
                             </a>
                             
 
                         </div>
                     </div>
 
-                    <div class="col-sm-4 gla_anim_box grid-item ceremony">
+                    <div class="col-sm-4 gla_anim_box grid-item juntes">
                         <div class="gla_shop_item">
-                            <a href="http://placehold.it/1400x800" class="lightbox">
-                                <img src="http://placehold.it/600x600" alt="">
+                             <a href="{{ asset('images/memorias/juntes/mascarillas.jpg') }}" class="lightbox">
+                                <img src="{{ asset('images/memorias/juntes/mascarillas.jpg') }}" alt="">
                             </a>
                             
 
                         </div>
                     </div>
 
-                    <div class="col-sm-4 gla_anim_box grid-item engagement">
+                    <div class="col-sm-4 gla_anim_box grid-item enamorado">
                         <div class="gla_shop_item">
-                            <a href="http://placehold.it/1400x800" class="lightbox">
-                                <img src="http://placehold.it/600x600" alt="">
+                            <a href="{{ asset('images/memorias/enamorandonos/beso.jpeg') }}" class="lightbox">
+                                <img src="{{ asset('images/memorias/enamorandonos/beso.jpeg') }}" alt="">
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 gla_anim_box grid-item compartiendo">
+                        <div class="gla_shop_item">
+                             <a href="{{ asset('images/memorias/compartiendo/hijos.jpeg') }}" class="lightbox">
+                                <img src="{{ asset('images/memorias/compartiendo/hijos.jpeg') }}" alt="">
                             </a>
                             
 
                         </div>
                     </div>
 
-                    <div class="col-sm-4 gla_anim_box grid-item engagement">
+                    <div class="col-sm-4 gla_anim_box grid-item juntes">
                         <div class="gla_shop_item">
-                            <a href="http://placehold.it/1400x800" class="lightbox">
-                                <img src="http://placehold.it/600x600" alt="">
+                             <a href="{{ asset('images/memorias/juntes/cocinando.jpeg') }}" class="lightbox">
+                                <img src="{{ asset('images/memorias/juntes/cocinando.jpeg') }}" alt="">
                             </a>
                             
 
                         </div>
                     </div>
 
-                    <div class="col-sm-4 gla_anim_box grid-item ceremony">
+                    <div class="col-sm-4 gla_anim_box grid-item conociendonos">
                         <div class="gla_shop_item">
-                            <a href="http://placehold.it/1400x800" class="lightbox">
-                                <img src="http://placehold.it/600x600" alt="">
+                            <a href="{{ asset('images/memorias/conociendonos/juntos.jpeg') }}" class="lightbox">
+                                <img src="{{ asset('images/memorias/conociendonos/juntos.jpeg') }}" alt="">
+                            </a>
+                            
+
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 gla_anim_box grid-item compartiendo">
+                        <div class="gla_shop_item">
+                             <a href="{{ asset('images/memorias/compartiendo/juntos.jpeg') }}" class="lightbox">
+                                <img src="{{ asset('images/memorias/compartiendo/juntos.jpeg') }}" alt="">
+                            </a>
+                            
+
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 gla_anim_box grid-item juntes">
+                        <div class="gla_shop_item">
+                             <a href="{{ asset('images/memorias/juntes/closet.jpeg') }}" class="lightbox">
+                                <img src="{{ asset('images/memorias/juntes/closet.jpeg') }}" alt="">
+                            </a>
+                            
+
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 gla_anim_box grid-item conociendonos">
+                        <div class="gla_shop_item">
+                            <a href="{{ asset('images/memorias/conociendonos/chat.jpeg') }}" class="lightbox">
+                                <img src="{{ asset('images/memorias/conociendonos/chat.jpeg') }}" alt="">
+                            </a>
+                            
+
+                        </div>
+                    </div>
+
+                     <div class="col-sm-4 gla_anim_box grid-item compartiendo">
+                        <div class="gla_shop_item">
+                             <a href="{{ asset('images/memorias/compartiendo/love.jpeg') }}" class="lightbox">
+                                <img src="{{ asset('images/memorias/compartiendo/love.jpeg') }}" alt="">
+                            </a>
+                            
+
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 gla_anim_box grid-item conociendonos">
+                        <div class="gla_shop_item">
+                            <a href="{{ asset('images/memorias/conociendonos/hotcake.jpeg') }}" class="lightbox">
+                                <img src="{{ asset('images/memorias/conociendonos/hotcake.jpeg') }}" alt="">
+                            </a>
+                            
+
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 gla_anim_box grid-item juntes">
+                        <div class="gla_shop_item">
+                             <a href="{{ asset('images/memorias/juntes/durmiendo.jpeg') }}" class="lightbox">
+                                <img src="{{ asset('images/memorias/juntes/durmiendo.jpeg') }}" alt="">
+                            </a>
+                            
+
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 gla_anim_box grid-item compartiendo">
+                        <div class="gla_shop_item">
+                             <a href="{{ asset('images/memorias/compartiendo/newyear.jpeg') }}" class="lightbox">
+                                <img src="{{ asset('images/memorias/compartiendo/newyear.jpeg') }}" alt="">
+                            </a>
+                            
+
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 gla_anim_box grid-item juntes">
+                        <div class="gla_shop_item">
+                             <a href="{{ asset('images/memorias/juntes/juego.jpeg') }}" class="lightbox">
+                                <img src="{{ asset('images/memorias/juntes/juego.jpeg') }}" alt="">
+                            </a>
+                            
+
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 gla_anim_box grid-item compartiendo">
+                        <div class="gla_shop_item">
+                             <a href="{{ asset('images/memorias/compartiendo/papa.jpeg') }}" class="lightbox">
+                                <img src="{{ asset('images/memorias/compartiendo/papa.jpeg') }}" alt="">
+                            </a>
+                            
+
+                        </div>
+                    </div>
+
+                     <div class="col-sm-4 gla_anim_box grid-item juntes">
+                        <div class="gla_shop_item">
+                             <a href="{{ asset('images/memorias/juntes/bella_durmiente.jpeg') }}" class="lightbox">
+                                <img src="{{ asset('images/memorias/juntes/bella_durmiente.jpeg') }}" alt="">
+                            </a>
+                            
+
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 gla_anim_box grid-item compartiendo">
+                        <div class="gla_shop_item">
+                             <a href="{{ asset('images/memorias/compartiendo/pastel.jpeg') }}" class="lightbox">
+                                <img src="{{ asset('images/memorias/compartiendo/pastel.jpeg') }}" alt="">
+                            </a>
+                            
+
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 gla_anim_box grid-item compartiendo">
+                        <div class="gla_shop_item">
+                             <a href="{{ asset('images/memorias/compartiendo/playa.jpeg') }}" class="lightbox">
+                                <img src="{{ asset('images/memorias/compartiendo/playa.jpeg') }}" alt="">
+                            </a>
+                            
+
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 gla_anim_box grid-item compartiendo">
+                        <div class="gla_shop_item">
+                             <a href="{{ asset('images/memorias/compartiendo/playa_todos.jpeg') }}" class="lightbox">
+                                <img src="{{ asset('images/memorias/compartiendo/playa_todos.jpeg') }}" alt="">
+                            </a>
+                            
+
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 gla_anim_box grid-item compartiendo">
+                        <div class="gla_shop_item">
+                             <a href="{{ asset('images/memorias/compartiendo/propuesta.jpeg') }}" class="lightbox">
+                                <img src="{{ asset('images/memorias/compartiendo/propuesta.jpeg') }}" alt="">
+                            </a>
+                            
+
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 gla_anim_box grid-item compartiendo">
+                        <div class="gla_shop_item">
+                             <a href="{{ asset('images/memorias/compartiendo/turista.jpeg') }}" class="lightbox">
+                                <img src="{{ asset('images/memorias/compartiendo/turista.jpeg') }}" alt="">
+                            </a>
+                            
+
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 gla_anim_box grid-item compartiendo">
+                        <div class="gla_shop_item">
+                             <a href="{{ asset('images/memorias/compartiendo/xcaret.jpeg') }}" class="lightbox">
+                                <img src="{{ asset('images/memorias/compartiendo/xcaret.jpeg') }}" alt="">
                             </a>
                             
 
@@ -455,242 +645,10 @@
         <!-- section end -->
 
 
-        <!-- section -->
-        <section class="gla_section gla_image_bck gla_wht_txt gla_fixed" data-stellar-background-ratio="0.8" data-image="http://placehold.it/1400x800">
-
-            <!-- Over -->
-            <div class="gla_over" data-color="#1e1d2d" data-opacity="0.4"></div>
-            
-            <div class="container text-center">
-
-
-                <h2>Registry</h2>
-                <p>We’re lucky enough to have nearly everything we need for our home already. And since neither of us has ever been outside of North America, we want our honeymoon to be extra special! If you want to help make it unforgettable, you can contribute using the link to the right. If you would like to give us something to update our home, we’ve compiled a short registry as well.</p>
-
-                <!-- icon boxes -->
-                <div class="gla_icon_boxes gla_partners row">
-                    
-                        
-                    <!-- item -->
-                    <div class="gla_partner_box">
-                        <a href="#"><img src="http://placehold.it/250x100" height="80" alt=""></a>
-                    </div>
-
-                    <!-- item -->
-                    <div class="gla_partner_box">
-                        <a href="#"><img src="http://placehold.it/250x100" height="80" alt=""></a>
-                    </div>
-
-                    <!-- item -->
-                    <div class="gla_partner_box">
-                        <a href="#"><img src="http://placehold.it/250x100" height="80" alt=""></a>
-                    </div>
-
-                    <!-- item -->
-                    <div class="gla_partner_box">
-                        <a href="#"><img src="http://placehold.it/250x100" height="80" alt=""></a>
-                    </div>
-
-                    <!-- item -->
-                    <div class="gla_partner_box">
-                        <a href="#"><img src="http://placehold.it/250x100" height="80" alt=""></a>
-                    </div>
-
-                    <!-- item -->
-                    <div class="gla_partner_box">
-                        <a href="#"><img src="http://placehold.it/250x100" height="80" alt=""></a>
-                    </div>
-
-                    <!-- item -->
-                    <div class="gla_partner_box">
-                        <a href="#"><img src="http://placehold.it/250x100" height="80" alt=""></a>
-                    </div>
-
-                    <!-- item -->
-                    <div class="gla_partner_box">
-                        <a href="#"><img src="http://placehold.it/250x100" height="80" alt=""></a>
-                    </div>
-
-                    <!-- item -->
-                    <div class="gla_partner_box">
-                        <a href="#"><img src="http://placehold.it/250x100" height="80" alt=""></a>
-                    </div>
-
-                    <!-- item -->
-                    <div class="gla_partner_box">
-                        <a href="#"><img src="http://placehold.it/250x100" height="80" alt=""></a>
-                    </div>
-    
-
-                </div>
-                <!-- icon boxes end -->
-                         
-            </div>
-            <!-- container end -->
-
-        </section>
-        <!-- section end -->
 
 
         <!-- section -->
-        <section class="gla_section gla_image_bck" data-color="#fff">
-            
-            
-            <div class="container text-center">
-
-                <h2>The Wedding Party</h2>
-                
-                <!-- filters -->
-                <div class="button-group filter-button-group">
-                    <a data-filter="*">Show All</a>
-                    <a data-filter=".groomsmen">Groomsmen</a>
-                    <a data-filter=".bridesmaids">Bridesmaids</a>
-                </div>
-                <!-- filters end -->
-
-                <!-- grid -->
-                <div class="gla_portfolio_no_padding grid">
-                    
-                    <div class="col-sm-4 gla_anim_box grid-item bridesmaids">
-                        <div class="gla_shop_item">
-                            <a href="http://placehold.it/1400x800" class="lightbox">
-                                <img src="http://placehold.it/600x600" alt="">
-                            </a>
-                            
-                            <a href="#" class="gla_shop_item_title">
-                                Andrew & Joanna
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 gla_anim_box grid-item bridesmaids">
-                        <div class="gla_shop_item">
-                            <a href="http://placehold.it/1400x800" class="lightbox">
-                                <img src="http://placehold.it/600x600" alt="">
-                            </a>
-                            
-                            <a href="#" class="gla_shop_item_title">
-                                Stewart & Ann
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 gla_anim_box grid-item bridesmaids">
-                        <div class="gla_shop_item">
-                            <a href="http://placehold.it/1400x800" class="lightbox">
-                                <img src="http://placehold.it/600x600" alt="">
-                            </a>
-                            
-                            <a href="#" class="gla_shop_item_title">
-                                Mark & Jenny
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 gla_anim_box grid-item broombridesmaidssmen">
-                        <div class="gla_shop_item">
-                            <a href="http://placehold.it/1400x800" class="lightbox">
-                                <img src="http://placehold.it/600x600" alt="">
-                            </a>
-                            
-                            <a href="#" class="gla_shop_item_title">
-                                Izzy & Katy
-                            </a>
-                        </div>
-                    </div>
-
-
-
-                    <div class="col-sm-4 gla_anim_box grid-item groomsmen">
-                        <div class="gla_shop_item">
-                            <a href="http://placehold.it/1400x800" class="lightbox">
-                                <img src="http://placehold.it/600x600" alt="">
-                            </a>
-                            
-                            <a href="#" class="gla_shop_item_title">
-                                Bob
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 gla_anim_box grid-item groomsmen">
-                        <div class="gla_shop_item">
-                            <a href="http://placehold.it/1400x800" class="lightbox">
-                                <img src="http://placehold.it/600x600" alt="">
-                            </a>
-                            
-                            <a href="#" class="gla_shop_item_title">
-                                Mark
-                            </a>
-                        </div>
-                    </div>
-
-
-                    <div class="col-sm-4 gla_anim_box grid-item groomsmen">
-                        <div class="gla_shop_item">
-                            <a href="http://placehold.it/1400x800" class="lightbox">
-                                <img src="http://placehold.it/600x600" alt="">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 gla_anim_box grid-item groomsmen">
-                        <div class="gla_shop_item">
-                            <a href="http://placehold.it/1400x800" class="lightbox">
-                                <img src="http://placehold.it/600x600" alt="">
-                            </a>
-                        </div>
-                    </div>
-
-
-                    <div class="col-sm-4 gla_anim_box grid-item groomsmen">
-                        <div class="gla_shop_item">
-                            <a href="http://placehold.it/1400x800" class="lightbox">
-                                <img src="http://placehold.it/600x600" alt="">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 gla_anim_box grid-item groomsmen">
-                        <div class="gla_shop_item">
-                            <a href="http://placehold.it/1400x800" class="lightbox">
-                                <img src="http://placehold.it/600x600" alt="">
-                            </a>                        
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 gla_anim_box grid-item groomsmen">
-                        <div class="gla_shop_item">
-                            <a href="http://placehold.it/1400x800" class="lightbox">
-                                <img src="http://placehold.it/600x600" alt="">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4 gla_anim_box grid-item groomsmen">
-                        <div class="gla_shop_item">
-                            <a href="http://placehold.it/1400x800" class="lightbox">
-                                <img src="http://placehold.it/600x600" alt="">
-                            </a>
-                        </div>
-                    </div>
-
-                 </div>
-                 <!-- grid end -->
-                
-
-                
-            </div>
-            <!-- container end -->
-
-        </section>
-        <!-- section end -->
-
-
-
-
-        <!-- section -->
-        <section class="gla_section gla_image_bck gla_fixed gla_wht_txt" data-stellar-background-ratio="0.8" data-image="http://placehold.it/1400x800">
+        <section class="gla_section gla_image_bck gla_fixed gla_wht_txt" data-stellar-background-ratio="0.8" data-image="{{ asset('images/vango.jpeg') }}">
             
             <!-- Over -->
             <div class="gla_over" data-color="#1e1d2d" data-opacity="0.4"></div>

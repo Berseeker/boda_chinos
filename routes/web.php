@@ -18,4 +18,4 @@ use App\Http\Controllers\HomeController;
 
 
 Route::get('/',[HomeController::class,'index']);
-Route::post('/',[HomeController::class,'create'])->name('home');
+Route::post('/post',[HomeController::class,'create'])->name('home.post');

@@ -12,13 +12,13 @@
     <div style="width: 600px;display:block;margin:0px auto;padding:16px;">
 
         <h3 style="text-align: center;">Boda de Chinos & Pablo</h3>
-        <p>Invitado: {{ $request->nombre }}</p>
-        <p>Teléfono: {{ $request->telefono }}</p>
-        <p>Asistira a la boda: {{ ($request->attend) }}</p>
-        <p>Vendra acompañado: {{ ($request->friends) }}</p>
-        <p>¿Con cuantos acompañantes vendra?: {{ ($request->paxs) }}</p>
-        <p>Nombre de los acompañantes: {{ ($request->pax_names) }}</p>
-        <p>Mensaje: {{ ($request->message) }}</p>
+        <p>Invitado: {{ $invitacion->nombre }}</p>
+        <p>Teléfono: {{ $invitacion->telefono }}</p>
+        <p>Asistira a la boda: {{ ($invitacion->attend) }}</p>
+        <p>Vendra acompañado: {{ ($invitacion->friends) }}</p>
+        <p>¿Con cuantos acompañantes vendra?: {{ ($invitacion->paxs) }}</p>
+        <p>Nombre de los acompañantes: {{ ($invitacion->pax_names) }}</p>
+        <p>Mensaje: {{ ($invitacion->message) }}</p>
     </div>
 </body>
 

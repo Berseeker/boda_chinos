@@ -35,7 +35,7 @@ class HomeController extends Controller
 
         $this->validate($request,$rules,$messages);
 
-        Mail::to('osiris.moralesrz@gmail.com')->bcc('juan.alucard.02@gmail.com')->send(new Invitacion($request));
+        Mail::to('osiris.moralesrz@gmail.com')->send(new Invitacion($request));
 
         return back()->with('success','Su mensaje se envio con exito.');
 

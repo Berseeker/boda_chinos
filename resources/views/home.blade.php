@@ -212,7 +212,7 @@
                                 </ul>
                             </div>
                         @endif
-                        <form action="{{ route('home') }}" method="POST">
+                        <form action="/post" method="POST">
                             @csrf
                             <div class="row">
                                 <div class="col-md-6">

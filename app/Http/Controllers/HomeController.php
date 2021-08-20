@@ -35,8 +35,18 @@ class HomeController extends Controller
 
         $this->validate($request,$rules,$messages);
 
-        Mail::to('osiris.moralesrz@gmail.com')->send(new Invitacion($request));
+        
+        $response = Http::post('http://example.com/users', [
+            'nombre' => $request->nombre,
+            'telefono' => $request->telefono,
+            'attend' => $request->attend,
+            'friends' => $request->friends,
+            'paxs' => $request->paxs,
+            'pax_names' => $request->pax_names,
+            'message' => $request->message,
+        ]);
 
+        dd($response);
         return back()->with('success','Su mensaje se envio con exito.');
 
     }

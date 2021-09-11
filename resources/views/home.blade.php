@@ -129,7 +129,7 @@
             <div class="container text-center">
                 <p><img src="{{ asset('images/animations/savethedate_wh.gif') }}" data-bottom-top="@src:images/animations/savethedate_wh.gif" height="150" alt=""></p>
                 <h2>Octubre 21th, 2021</h2>
-                <h3 class="gla_subtitle">Salón Quinta Punta Sam,<br>Cancún,  MX</h3>
+                <h3 class="gla_subtitle">Salón La Montaña del Águila,<br>Cancún,  MX</h3>
                 <div class="gla_countdown" data-year="2021" data-month="10" data-day="21"></div>
                 
             </div>
@@ -147,7 +147,7 @@
                 <p><img src="{{ asset('images/animations/flower6.gif') }}" data-bottom-top="@src:images/animations/flower6.gif; opacity:1" class="gla_animated_flower" height="110" alt=""></p>
                 <h2>Detalles Boda</h2>
                 <h3 class="gla_subtitle">Cuándo & Dónde</h3>
-                <p>Nuestra boda será en el registro civil sólo con las/os testigas/os, después estaremos en el salón Quinta Punta Sam donde realizaremos una unión espiritual y posteriormente se dará inicio a la celebración. </p>
+                <p>Nuestra boda será en el registro civil sólo con las/os testigas/os, después estaremos en el salón La Montaña del Águila donde realizaremos una unión espiritual y posteriormente se dará inicio a la celebración. </p>
                 <div class="row text-center">
                     <div class="col-md-4 gla_round_block">
                         <div class="gla_round_im gla_image_bck" data-image="{{ asset('images/boda_civil.jpeg') }}"></div>
@@ -162,19 +162,19 @@
                         <div class="gla_round_im gla_image_bck" data-image="{{ asset('images/ritual.jpeg') }}"></div>
                         <h3>Unión Espiritual</h3>
                         <p>1:00 PM – 1:30 PM<br>
-                        Salón Quinta Punta Sam,<br>
+                        Salón La Montaña del Águila,<br>
                         Cancún<br>
                         MX</p>
-                        <a href="https://www.google.com.mx/maps/place/Sal%C3%B3n+De+Eventos+Quinta+Punta+Sam/@21.2162308,-86.8048248,17z/data=!3m1!4b1!4m5!3m4!1s0x8f4c2f21ee2048b5:0xdf68beee4801608f!8m2!3d21.2162302!4d-86.8026138" target="_blank" class="btn">View Map</a>
+                        <a href="https://www.google.com.mx/maps/place/La+Monta%C3%B1a+Del+Aguila/@21.1402127,-86.8955736,20.15z/data=!4m8!3m7!1s0x8f4c2b49a7fb6a05:0x832825043d4efa37!5m2!4m1!1i2!8m2!3d21.1398869!4d-86.8954289" target="_blank" class="btn">View Map</a>
                     </div>
                     <div class="col-md-4 gla_round_block">
                         <div class="gla_round_im gla_image_bck" data-image="{{ asset('images/salon.jpeg') }}"></div>
                         <h3>Celebración</h3>
                         <p>1:30 PM – 11:30 PM<br>
-                        Salón Quinta Punta Sam,<br>
+                        Salón La Montaña del Águila,<br>
                         Cancún<br>
                         MX</p>
-                        <a href="https://www.google.com.mx/maps/place/Sal%C3%B3n+De+Eventos+Quinta+Punta+Sam/@21.2162308,-86.8048248,17z/data=!3m1!4b1!4m5!3m4!1s0x8f4c2f21ee2048b5:0xdf68beee4801608f!8m2!3d21.2162302!4d-86.8026138" target="_blank" class="btn">View Map</a>
+                        <a href="https://www.google.com.mx/maps/place/La+Monta%C3%B1a+Del+Aguila/@21.1402127,-86.8955736,20.15z/data=!4m8!3m7!1s0x8f4c2b49a7fb6a05:0x832825043d4efa37!5m2!4m1!1i2!8m2!3d21.1398869!4d-86.8954289" target="_blank" class="btn">View Map</a>
                     </div>
                 </div>
 
